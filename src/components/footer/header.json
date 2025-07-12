@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_footer_headers",
+  "info": {
+    "displayName": "Header",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "header_icon_url": {
+      "type": "text",
+      "required": true
+    },
+    "social_links": {
+      "type": "component",
+      "component": "footer.social-links",
+      "repeatable": true
+    },
+    "header_text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_footer_footer_contents",
+  "info": {
+    "displayName": "Footer Content",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "descripiton": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

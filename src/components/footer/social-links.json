@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_footer_social_links",
+  "info": {
+    "displayName": "Social Links",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "social_name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "text",
+      "required": true
+    },
+    "social_icon_url": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

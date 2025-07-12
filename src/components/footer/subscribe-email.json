@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_footer_subscribe_emails",
+  "info": {
+    "displayName": "Subscribe Email",
+    "icon": "thumbUp"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "input_placeholder": {
+      "type": "string"
+    },
+    "button_text": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

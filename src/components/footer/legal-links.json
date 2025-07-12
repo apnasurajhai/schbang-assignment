@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_footer_legal_links",
+  "info": {
+    "displayName": "Legal Links",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

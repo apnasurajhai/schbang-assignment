@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_navigation_sub_menus",
+  "info": {
+    "displayName": "Sub Menu",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

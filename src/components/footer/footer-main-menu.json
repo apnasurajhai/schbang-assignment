@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_footer_footer_main_menus",
+  "info": {
+    "displayName": "Footer Main Menu",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "string",
+      "required": true
+    },
+    "menu_links": {
+      "type": "component",
+      "component": "footer.footer-sub-menu",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

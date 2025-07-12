@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_footer_legals",
+  "info": {
+    "displayName": "Legals"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "legal_links": {
+      "type": "component",
+      "component": "footer.legal-links",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

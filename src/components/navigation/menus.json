@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_navigation_menus",
+  "info": {
+    "displayName": "Menus",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "url": {
+      "type": "text"
+    },
+    "has_submenu": {
+      "type": "boolean"
+    },
+    "sub_menu": {
+      "type": "component",
+      "component": "navigation.sub-menu",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
