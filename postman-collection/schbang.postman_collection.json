@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "274302c0-0a9a-43ea-bafb-7230296a4c8f",
+		"name": "schbang",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27955699",
+		"_collection_link": "https://solar-eclipse-20034.postman.co/workspace/vedic-rishi-astro-apis~ae5c2e7d-7f99-4c2e-8fd0-a393b3608e7c/collection/27955699-274302c0-0a9a-43ea-bafb-7230296a4c8f?action=share&source=collection_link&creator=27955699"
+	},
+	"item": [
+		{
+			"name": "Footer",
+			"item": [
+				{
+					"name": "To get data for footer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}api/navigation?populate[header][populate][social_links]=*&footer[…]l_links]=*&populate[footer]=*&populate[subscribe][populate]=*",
+							"host": [
+								"{{local_url}}api"
+							],
+							"path": [
+								"navigation"
+							],
+							"query": [
+								{
+									"key": "populate[header][populate][social_links]",
+									"value": "*"
+								},
+								{
+									"key": "footer[…]l_links]",
+									"value": "*"
+								},
+								{
+									"key": "populate[footer]",
+									"value": "*"
+								},
+								{
+									"key": "populate[subscribe][populate]",
+									"value": "*"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example data for footer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local_url}}api/footer?populate[header][populate][social_links]=*&populat[…]l_links]=*&populate[footer]=*&populate[subscribe][populate]=*",
+									"host": [
+										"{{local_url}}api"
+									],
+									"path": [
+										"footer"
+									],
+									"query": [
+										{
+											"key": "populate[header][populate][social_links]",
+											"value": "*"
+										},
+										{
+											"key": "populat[…]l_links]",
+											"value": "*"
+										},
+										{
+											"key": "populate[footer]",
+											"value": "*"
+										},
+										{
+											"key": "populate[subscribe][populate]",
+											"value": "*"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"body": "{\n    \"data\": {\n        \"id\": 3,\n        \"documentId\": \"uprr7a4ho819dujho9ofsxst\",\n        \"createdAt\": \"2025-07-10T18:10:56.776Z\",\n        \"updatedAt\": \"2025-07-11T12:40:06.905Z\",\n        \"publishedAt\": \"2025-07-11T12:40:06.937Z\",\n        \"header\": {\n            \"id\": 3,\n            \"header_icon_url\": \"https://hitech-prod.blr1.cdn.digitaloceanspaces.com/Hitech_logo_4_1_f8ff3f1614.png\",\n            \"header_text\": null,\n            \"social_links\": [\n                {\n                    \"id\": 11,\n                    \"social_name\": \"facebook\",\n                    \"url\": \"https://www.schbang.com/\",\n                    \"social_icon_url\": \"https://img.icons8.com/ios_filled/512/facebook-new.png\"\n                },\n                {\n                    \"id\": 12,\n                    \"social_name\": \"twitter\",\n                    \"url\": \"https://www.schbang.com/\",\n                    \"social_icon_url\": \"https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/twitter-512.png\"\n                },\n                {\n                    \"id\": 13,\n                    \"social_name\": \"linkedin\",\n                    \"url\": \"https://www.schbang.com/\",\n                    \"social_icon_url\": \"https://img.icons8.com/ios11/512/linkedin.png\"\n                },\n                {\n                    \"id\": 14,\n                    \"social_name\": \"youtube\",\n                    \"url\": \"https://www.schbang.com/\",\n                    \"social_icon_url\": \"https://www.iconpacks.net/icons/1/free-youtube-icon-123-thumb.png\"\n                },\n                {\n                    \"id\": 15,\n                    \"social_name\": \"instagram\",\n                    \"url\": \"https://www.schbang.com/\",\n                    \"social_icon_url\": \"https://www.svgrepo.com/show/506668/instagram.svg\"\n                }\n            ]\n        },\n        \"footer\": {\n            \"id\": 3,\n            \"title\": \"Footer Content:\",\n            \"descripiton\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\"\n        },\n        \"subscribe\": {\n            \"id\": 3,\n            \"label\": \"Subscribe for Latest Updates\",\n            \"input_placeholder\": \"Enter Email\",\n            \"button_text\": [\n                {\n                    \"id\": 12,\n                    \"documentId\": \"nx6hyc5alygmis9upeq1kd2m\",\n                    \"name\": \"button-arrow-right-1.png\",\n                    \"alternativeText\": null,\n                    \"caption\": null,\n                    \"width\": 512,\n                    \"height\": 512,\n                    \"formats\": {\n                        \"thumbnail\": {\n                            \"name\": \"thumbnail_button-arrow-right-1.png\",\n                            \"hash\": \"thumbnail_button_arrow_right_1_3b3d021808\",\n                            \"ext\": \".png\",\n                            \"mime\": \"image/png\",\n                            \"path\": null,\n                            \"width\": 156,\n                            \"height\": 156,\n                            \"size\": 4.46,\n                            \"sizeInBytes\": 4463,\n                            \"url\": \"/uploads/thumbnail_button_arrow_right_1_3b3d021808.png\"\n                        },\n                        \"small\": {\n                            \"name\": \"small_button-arrow-right-1.png\",\n                            \"hash\": \"small_button_arrow_right_1_3b3d021808\",\n                            \"ext\": \".png\",\n                            \"mime\": \"image/png\",\n                            \"path\": null,\n                            \"width\": 500,\n                            \"height\": 500,\n                            \"size\": 19.64,\n                            \"sizeInBytes\": 19644,\n                            \"url\": \"/uploads/small_button_arrow_right_1_3b3d021808.png\"\n                        }\n                    },\n                    \"hash\": \"button_arrow_right_1_3b3d021808\",\n                    \"ext\": \".png\",\n                    \"mime\": \"image/png\",\n                    \"size\": 3.71,\n                    \"url\": \"/uploads/button_arrow_right_1_3b3d021808.png\",\n                    \"previewUrl\": null,\n                    \"provider\": \"local\",\n                    \"provider_metadata\": null,\n                    \"createdAt\": \"2025-07-11T12:39:56.998Z\",\n                    \"updatedAt\": \"2025-07-11T12:39:56.998Z\",\n                    \"publishedAt\": \"2025-07-11T12:39:56.998Z\"\n                }\n            ]\n        }\n    },\n    \"meta\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Navigation",
+			"item": [
+				{
+					"name": "To get navigation data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}api/navigation?[populate][menus][populate][sub_menu]=*",
+							"host": [
+								"{{local_url}}api"
+							],
+							"path": [
+								"navigation"
+							],
+							"query": [
+								{
+									"key": "[populate][menus][populate][sub_menu]",
+									"value": "*"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example output for navigation data",
+							"originalRequest": {
+								"method": "GET",
+								"header": []
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 3,\n        \"documentId\": \"e9a8amu91pi1af7dox47ne6x\",\n        \"logo_icon_url\": \"https://cdn.prod.website-files.com/64081b3f2fda69c80b5566e5/64804f295294d986354397af_logo%20animation1%20updated1.gif\",\n        \"createdAt\": \"2025-07-12T15:49:49.972Z\",\n        \"updatedAt\": \"2025-07-12T16:02:36.058Z\",\n        \"publishedAt\": \"2025-07-12T16:02:36.072Z\",\n        \"menus\": [\n            {\n                \"id\": 16,\n                \"label\": \"Company\",\n                \"url\": \"https://www.schbang.com/\",\n                \"has_submenu\": true,\n                \"sub_menu\": [\n                    {\n                        \"id\": 13,\n                        \"label\": \"company\",\n                        \"url\": \"https://www.schbang.com/\"\n                    }\n                ]\n            },\n            {\n                \"id\": 17,\n                \"label\": \"Products\",\n                \"url\": \"https://www.schbang.com/\",\n                \"has_submenu\": true,\n                \"sub_menu\": [\n                    {\n                        \"id\": 14,\n                        \"label\": \"Products\",\n                        \"url\": \"https://www.schbang.com/\"\n                    }\n                ]\n            },\n            {\n                \"id\": 18,\n                \"label\": \"Markets\",\n                \"url\": \"https://www.schbang.com/\",\n                \"has_submenu\": true,\n                \"sub_menu\": [\n                    {\n                        \"id\": 15,\n                        \"label\": \"Markets\",\n                        \"url\": \"https://www.schbang.com/\"\n                    }\n                ]\n            },\n            {\n                \"id\": 19,\n                \"label\": \"Capabilities\",\n                \"url\": \"https://www.schbang.com/\",\n                \"has_submenu\": true,\n                \"sub_menu\": [\n                    {\n                        \"id\": 16,\n                        \"label\": \"Capabilities\",\n                        \"url\": \"https://www.schbang.com/\"\n                    }\n                ]\n            },\n            {\n                \"id\": 20,\n                \"label\": \"Commitment\",\n                \"url\": \"https://www.schbang.com/\",\n                \"has_submenu\": true,\n                \"sub_menu\": [\n                    {\n                        \"id\": 17,\n                        \"label\": \"Commitment\",\n                        \"url\": \"https://www.schbang.com/\"\n                    }\n                ]\n            },\n            {\n                \"id\": 21,\n                \"label\": \"News & Events\",\n                \"url\": \"https://www.schbang.com/\",\n                \"has_submenu\": true,\n                \"sub_menu\": [\n                    {\n                        \"id\": 18,\n                        \"label\": \"News & Events\",\n                        \"url\": \"https://www.schbang.com/\"\n                    }\n                ]\n            },\n            {\n                \"id\": 15,\n                \"label\": \"Contact Us\",\n                \"url\": \"https://www.schbang.com/\",\n                \"has_submenu\": false,\n                \"sub_menu\": []\n            }\n        ]\n    },\n    \"meta\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "About Page",
+			"item": [
+				{
+					"name": "Get data for about us page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_url}}api/about?populate[sections][populate]=*",
+							"host": [
+								"{{local_url}}api"
+							],
+							"path": [
+								"about"
+							],
+							"query": [
+								{
+									"key": "populate[sections][populate]",
+									"value": "*"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get data for about us page",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local_url}}api/about?populate[sections][populate]=*",
+									"host": [
+										"{{local_url}}api"
+									],
+									"path": [
+										"about"
+									],
+									"query": [
+										{
+											"key": "populate[sections][populate]",
+											"value": "*"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"body": "{\n    \"data\": {\n        \"id\": 2,\n        \"documentId\": \"oqzmyazvlheq0limfdqssrv6\",\n        \"createdAt\": \"2025-07-13T09:49:01.170Z\",\n        \"updatedAt\": \"2025-07-13T10:07:57.547Z\",\n        \"publishedAt\": \"2025-07-13T10:07:57.581Z\",\n        \"title\": \"About\",\n        \"page_slug\": \"about\",\n        \"meta_title\": \"about \",\n        \"meta_descriptions\": \"some descriptions here\",\n        \"sections\": [\n            {\n                \"__component\": \"page.hero-section\",\n                \"id\": 7,\n                \"title\": \"Your Partner for Rigid Plastics Packaging Solutions\",\n                \"tag\": \"About Hitech\",\n                \"button_text\": null,\n                \"descriptions\": [],\n                \"image\": null,\n                \"video\": null\n            },\n            {\n                \"__component\": \"page.hero-section\",\n                \"id\": 8,\n                \"title\": \"We Help Your Brand Stand Out\",\n                \"tag\": \"Who We Are\",\n                \"button_text\": null,\n                \"descriptions\": [\n                    {\n                        \"id\": 25,\n                        \"text\": \"Since 1991, Hitech Corp has been your trusted partner in providing complete packaging solutions. We offer a wide range of rigid plastic packaging with unique designs which are tailor-made for your requirements. From ideation to prototyping to manufacturing to final delivery of the product, we closely collaborate with you all the way.\"\n                    },\n                    {\n                        \"id\": 26,\n                        \"text\": \"To meet our customer requirements of speed to market, we have 13 manufacturing facilities across India and a state-of-the-art technology centre. We serve a diverse array of industries, from personal care to home care, food & beverages to dairy, paints to oils and lubricants, and agrochemicals to pharmaceuticals.\"\n                    }\n                ],\n                \"image\": null,\n                \"video\": null\n            },\n            {\n                \"__component\": \"page.hero-section\",\n                \"id\": 9,\n                \"title\": \"Efficiency Across Industries\",\n                \"tag\": null,\n                \"button_text\": null,\n                \"descriptions\": [\n                    {\n                        \"id\": 27,\n                        \"text\": \"Hitech Corp is a company with strong values founded by Late Mr Ashwin Dani in 1991. His legacy is carried on by Mr Malav Dani.\\n\"\n                    },\n                    {\n                        \"id\": 28,\n                        \"text\": \"Our identity is based on unwavering integrity, promoting ethical practices, fairness in all dealings and respectful conduct. Our commitment is driven by compassion, thus making a positive impact on both society and the environment.\"\n                    },\n                    {\n                        \"id\": 29,\n                        \"text\": \"We create products that make a positive difference in the lives and homes of people around us.\"\n                    }\n                ],\n                \"image\": null,\n                \"video\": null\n            },\n            {\n                \"__component\": \"page.journey-section\",\n                \"id\": 2,\n                \"tag\": \"Our journey\",\n                \"title\": \"Together Through Each Milestone\",\n                \"description\": {\n                    \"id\": 23,\n                    \"text\": \"We are grateful to the ones who we started our journey with, and to the ones who joined us along the way. Let’s recount the triumphs that allowed us to expand our operations to serve you better.\"\n                },\n                \"cards\": []\n            },\n            {\n                \"__component\": \"page.cta-section\",\n                \"id\": 2,\n                \"title\": null,\n                \"descriptions\": [\n                    {\n                        \"id\": 30,\n                        \"text\": \"We are guided by the ethos of \\\"Vasudhaiva Kutumbakam\\\" — the belief that the World is One Family.\"\n                    }\n                ],\n                \"button\": []\n            },\n            {\n                \"__component\": \"page.hero-section\",\n                \"id\": 10,\n                \"title\": \"The Values that Drive Us\",\n                \"tag\": \"Our values\",\n                \"button_text\": null,\n                \"descriptions\": [\n                    {\n                        \"id\": 31,\n                        \"text\": \"Hitech Corp is a company with strong values founded by Late Mr Ashwin Dani in 1991. His legacy is carried on by Mr Malav Dani.\"\n                    },\n                    {\n                        \"id\": 32,\n                        \"text\": \"Our identity is based on unwavering integrity, promoting ethical practices, fairness in all dealings and respectful conduct. Our commitment is driven by compassion, thus making a positive impact on both society and the environment.\"\n                    }\n                ],\n                \"image\": null,\n                \"video\": null\n            },\n            {\n                \"__component\": \"page.hero-section\",\n                \"id\": 11,\n                \"title\": null,\n                \"tag\": null,\n                \"button_text\": null,\n                \"descriptions\": [\n                    {\n                        \"id\": 33,\n                        \"text\": \"We actively contribute to social and environmental causes, reflecting a broader sense of responsibility. Embracing employee diversity is our fundamental character, creating an inclusive workplace that values unique perspectives for innovation and quality products. These interconnected values define our corporate character and guide us in making a meaningful difference in the world.\"\n                    },\n                    {\n                        \"id\": 34,\n                        \"text\": \"The sustainable, environmentally conscious use of resources is the basis of our business activities, ensuring that future generations can also live in a healthy environment.\"\n                    }\n                ],\n                \"image\": null,\n                \"video\": null\n            },\n            {\n                \"__component\": \"page.hero-section\",\n                \"id\": 12,\n                \"title\": \"Hitech Corporation - Who We Are\",\n                \"tag\": null,\n                \"button_text\": null,\n                \"descriptions\": [\n                    {\n                        \"id\": 35,\n                        \"text\": \"Hitech Corporation (formerly known as Hitech Plast) is a leading manufacturer of rigid plastic packaging and stands as the largest business of the Hitech Group.\"\n                    }\n                ],\n                \"image\": null,\n                \"video\": {\n                    \"id\": 2,\n                    \"video_url\": \"https://www.youtube.com/watch?v=wcJdGhnwdV0\",\n                    \"thumbnail_url\": null\n                }\n            },\n            {\n                \"__component\": \"page.grid-section\",\n                \"id\": 4,\n                \"tag\": \"Our Guiding Principles\",\n                \"title\": \"Hitech at its Core\",\n                \"descriptions\": {\n                    \"id\": 24,\n                    \"text\": \"Dive into our world of integrity, commitment, innovation and excellence.\"\n                },\n                \"cards\": [\n                    {\n                        \"id\": 5,\n                        \"title\": \"Innovation\",\n                        \"sub_title\": null,\n                        \"click_url\": null\n                    },\n                    {\n                        \"id\": 6,\n                        \"title\": \"Commitment\",\n                        \"sub_title\": null,\n                        \"click_url\": null\n                    },\n                    {\n                        \"id\": 7,\n                        \"title\": \"Integrity\",\n                        \"sub_title\": null,\n                        \"click_url\": null\n                    },\n                    {\n                        \"id\": 8,\n                        \"title\": \"Excellence\",\n                        \"sub_title\": null,\n                        \"click_url\": null\n                    }\n                ]\n            },\n            {\n                \"__component\": \"page.testimonial-section\",\n                \"id\": 2,\n                \"tag\": \"Message from our leaders\",\n                \"title\": \"Guided by Legacy, Strengthened by Experience\",\n                \"button\": {\n                    \"id\": 4,\n                    \"text\": \"View all Leaders\",\n                    \"url\": null\n                },\n                \"cards\": [\n                    {\n                        \"id\": 3,\n                        \"name\": \"Late Mr. Ashwin Suryakant Dani\",\n                        \"designation\": \"Founder\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"name\": \"Mr. Malav Ashwin Dani\",\n                        \"designation\": \"Managing Director\"\n                    }\n                ]\n            },\n            {\n                \"__component\": \"page.grid-section\",\n                \"id\": 3,\n                \"tag\": \"Recent Awards\",\n                \"title\": \"Celebrating Excellence\",\n                \"descriptions\": null,\n                \"cards\": []\n            },\n            {\n                \"__component\": \"page.contact-us-section\",\n                \"id\": 2,\n                \"title\": \"Join us for an enriching career\",\n                \"button\": {\n                    \"id\": 5,\n                    \"text\": \"Contact Us\",\n                    \"url\": null\n                },\n                \"images\": []\n            }\n        ]\n    },\n    \"meta\": {}\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
