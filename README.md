@@ -77,7 +77,7 @@ This is the main content type for building the page. It contains metadata and a 
 - `meta_descriptions`: For SEO purposes.
 - `sections`: A **Dynamic Zone** that allows the selection of various page components to build the page.
 
-![About Page Structure](./screenshots/single-type-about-page.jpg)
+![About Page Structure](./screenshots/single-type-about-page.png)
 
 ---
 
@@ -92,22 +92,22 @@ These are the high-level components that can be added to the `sections` Dynamic 
 - **Hero Section**
 
   - _Purpose:_ The main banner section at the top of the page.
-    ![Hero Section Component](./screenshots/page-hero-section-component.jpg)
+    ![Hero Section Component](./screenshots/page-hero-section-component.png)
 
 - **Journey Section**
 
   - _Purpose:_ To showcase a process or timeline in a card-based layout.
-    ![Journey Section Component](./screenshots/page-journey-section-component.jpg)
+    ![Journey Section Component](./screenshots/page-journey-section-component.png)
 
 - **Grid Section**
 
   - _Purpose:_ A flexible grid to display features, team members, or other categorized content.
-    ![Grid Section Component](./screenshots/page-grid-section-component.jpg)
+    ![Grid Section Component](./screenshots/page-grid-section-component.png)
 
 - **Testimonial Section**
 
   - _Purpose:_ To display customer or user testimonials in a slider or list.
-    ![Testimonial Section Component](./screenshots/page-testimonial-section-component.jpg)
+    ![Testimonial Section Component](./screenshots/page-testimonial-section-component.png)
 
 - **CTA Section**
   - _Purpose:_ A "Call to Action" block to encourage user interaction, with a title, description, and button.
@@ -119,7 +119,7 @@ These components are likely used within a "Global" or "Navigation" Collection Ty
 
 - **Menus**
   - _Purpose:_ Defines the structure for a navigation link, including support for nested sub-menus. The `has_submenu` boolean field can be used to conditionally show a dropdown on the frontend.
-    ![Navigation Menus Component](./screenshots/navigation-menu-component.jpg)
+    ![Navigation Menus Component](./screenshots/navigation-menu-component.png)
 
 #### Footer Components
 
@@ -128,7 +128,7 @@ These components are likely used within a "Global" or "Footer" Collection Type t
 - **Legals**
 
   - _Purpose:_ Manages the copyright text and a repeatable list of legal links (e.g., Privacy Policy, Terms of Service).
-    ![Footer Legals Component](./screenshots/footer-legal-component.jpg)
+    ![Footer Legals Component](./screenshots/footer-legal-component.png)
 
 - **Subscribe Email**
   - _Purpose:_ Defines the fields for a newsletter signup form in the footer.
