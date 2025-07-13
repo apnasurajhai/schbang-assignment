@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_page_journey_cards",
+  "info": {
+    "displayName": "Journey Card",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "component",
+      "component": "page.image",
+      "repeatable": false
+    },
+    "descriptions": {
+      "type": "component",
+      "component": "page.descriptions",
+      "repeatable": true
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

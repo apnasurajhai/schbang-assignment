@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_page_image_s",
+  "info": {
+    "displayName": "Image ",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "image_url": {
+      "type": "text"
+    },
+    "alt_text": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

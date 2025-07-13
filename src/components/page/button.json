@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_page_buttons",
+  "info": {
+    "displayName": "Button",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

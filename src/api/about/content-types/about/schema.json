@@ -4,20 +4,35 @@
   "info": {
     "singularName": "about",
     "pluralName": "abouts",
-    "displayName": "About",
-    "description": "Write about yourself and the content you create"
+    "displayName": "About"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "blocks": {
+    "page_slug": {
+      "type": "string"
+    },
+    "meta_title": {
+      "type": "string"
+    },
+    "meta_descriptions": {
+      "type": "text"
+    },
+    "sections": {
       "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+      "components": [
+        "page.hero-section",
+        "page.journey-section",
+        "page.grid-section",
+        "page.contact-us-section",
+        "page.testimonial-section",
+        "page.cta-section"
+      ]
     }
   }
 }

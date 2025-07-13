@@ -128,6 +128,181 @@ export interface NavigationSubMenu extends Struct.ComponentSchema {
   };
 }
 
+export interface PageButton extends Struct.ComponentSchema {
+  collectionName: 'components_page_buttons';
+  info: {
+    displayName: 'Button';
+    icon: 'cog';
+  };
+  attributes: {
+    text: Schema.Attribute.String & Schema.Attribute.Required;
+    url: Schema.Attribute.Text;
+  };
+}
+
+export interface PageCard extends Struct.ComponentSchema {
+  collectionName: 'components_page_cards';
+  info: {
+    displayName: 'Card';
+    icon: 'apps';
+  };
+  attributes: {
+    click_url: Schema.Attribute.Text;
+    description: Schema.Attribute.Component<'page.descriptions', false>;
+    image: Schema.Attribute.Component<'page.image', false>;
+    sub_title: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PageContactUsSection extends Struct.ComponentSchema {
+  collectionName: 'components_page_contact_us_sections';
+  info: {
+    displayName: 'Contact Us Section';
+    icon: 'globe';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'page.button', false>;
+    images: Schema.Attribute.Component<'page.image', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PageCtaSection extends Struct.ComponentSchema {
+  collectionName: 'components_page_cta_sections';
+  info: {
+    displayName: 'CTA Section';
+    icon: 'command';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'page.button', true>;
+    descriptions: Schema.Attribute.Component<'page.descriptions', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PageDescriptions extends Struct.ComponentSchema {
+  collectionName: 'components_page_descriptions';
+  info: {
+    displayName: 'descriptions';
+    icon: 'layer';
+  };
+  attributes: {
+    text: Schema.Attribute.Text;
+  };
+}
+
+export interface PageGridSection extends Struct.ComponentSchema {
+  collectionName: 'components_page_grid_sections';
+  info: {
+    displayName: 'Grid Section';
+    icon: 'apps';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'page.card', true>;
+    descriptions: Schema.Attribute.Component<'page.descriptions', false>;
+    tag: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PageHeroSection extends Struct.ComponentSchema {
+  collectionName: 'components_page_hero_sections';
+  info: {
+    displayName: 'Hero Section';
+    icon: 'book';
+  };
+  attributes: {
+    button_text: Schema.Attribute.String;
+    descriptions: Schema.Attribute.Component<'page.descriptions', true>;
+    image: Schema.Attribute.Component<'page.image', false>;
+    tag: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    video: Schema.Attribute.Component<'page.video', false>;
+  };
+}
+
+export interface PageImage extends Struct.ComponentSchema {
+  collectionName: 'components_page_image_s';
+  info: {
+    displayName: 'Image ';
+    icon: 'archive';
+  };
+  attributes: {
+    alt_text: Schema.Attribute.String & Schema.Attribute.Required;
+    image_url: Schema.Attribute.Text;
+  };
+}
+
+export interface PageJourneyCard extends Struct.ComponentSchema {
+  collectionName: 'components_page_journey_cards';
+  info: {
+    displayName: 'Journey Card';
+    icon: 'bulletList';
+  };
+  attributes: {
+    descriptions: Schema.Attribute.Component<'page.descriptions', true>;
+    image: Schema.Attribute.Component<'page.image', false>;
+    key: Schema.Attribute.String;
+    sub_title: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PageJourneySection extends Struct.ComponentSchema {
+  collectionName: 'components_page_journey_sections';
+  info: {
+    displayName: 'Journey Section';
+    icon: 'book';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'page.journey-card', true>;
+    description: Schema.Attribute.Component<'page.descriptions', false>;
+    tag: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PageTestimonialCard extends Struct.ComponentSchema {
+  collectionName: 'components_page_testimonial_cards';
+  info: {
+    displayName: 'Testimonial Card';
+    icon: 'alien';
+  };
+  attributes: {
+    descriptions: Schema.Attribute.Component<'page.descriptions', true>;
+    designation: Schema.Attribute.String;
+    image: Schema.Attribute.Component<'page.image', false>;
+    name: Schema.Attribute.String;
+  };
+}
+
+export interface PageTestimonialSection extends Struct.ComponentSchema {
+  collectionName: 'components_page_testimonial_sections';
+  info: {
+    displayName: 'Testimonial Section';
+    icon: 'bulletList';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'page.button', false>;
+    cards: Schema.Attribute.Component<'page.testimonial-card', true>;
+    tag: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PageVideo extends Struct.ComponentSchema {
+  collectionName: 'components_page_videos';
+  info: {
+    displayName: 'Video';
+    icon: 'crop';
+  };
+  attributes: {
+    thumbnail_url: Schema.Attribute.Text;
+    video_url: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -203,6 +378,19 @@ declare module '@strapi/strapi' {
       'footer.subscribe-email': FooterSubscribeEmail;
       'navigation.menus': NavigationMenus;
       'navigation.sub-menu': NavigationSubMenu;
+      'page.button': PageButton;
+      'page.card': PageCard;
+      'page.contact-us-section': PageContactUsSection;
+      'page.cta-section': PageCtaSection;
+      'page.descriptions': PageDescriptions;
+      'page.grid-section': PageGridSection;
+      'page.hero-section': PageHeroSection;
+      'page.image': PageImage;
+      'page.journey-card': PageJourneyCard;
+      'page.journey-section': PageJourneySection;
+      'page.testimonial-card': PageTestimonialCard;
+      'page.testimonial-section': PageTestimonialSection;
+      'page.video': PageVideo;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

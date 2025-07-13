@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_page_videos",
+  "info": {
+    "displayName": "Video",
+    "icon": "crop"
+  },
+  "options": {},
+  "attributes": {
+    "video_url": {
+      "type": "text"
+    },
+    "thumbnail_url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

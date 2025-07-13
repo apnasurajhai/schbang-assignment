@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_page_grid_sections",
+  "info": {
+    "displayName": "Grid Section",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "descriptions": {
+      "type": "component",
+      "component": "page.descriptions",
+      "repeatable": false
+    },
+    "cards": {
+      "type": "component",
+      "component": "page.card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

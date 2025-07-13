@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_page_descriptions",
+  "info": {
+    "displayName": "descriptions",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
