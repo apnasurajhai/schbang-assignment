@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_page_journey_sections",
+  "info": {
+    "displayName": "Journey Section",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "component",
+      "component": "page.descriptions",
+      "repeatable": false
+    },
+    "cards": {
+      "type": "component",
+      "component": "page.journey-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

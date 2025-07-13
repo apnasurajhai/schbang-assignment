@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_page_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "button_text": {
+      "type": "string"
+    },
+    "descriptions": {
+      "type": "component",
+      "component": "page.descriptions",
+      "repeatable": true
+    },
+    "image": {
+      "type": "component",
+      "component": "page.image",
+      "repeatable": false
+    },
+    "video": {
+      "type": "component",
+      "component": "page.video",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

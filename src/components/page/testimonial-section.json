@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_page_testimonial_sections",
+  "info": {
+    "displayName": "Testimonial Section",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "component": "page.button",
+      "repeatable": false
+    },
+    "cards": {
+      "type": "component",
+      "component": "page.testimonial-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

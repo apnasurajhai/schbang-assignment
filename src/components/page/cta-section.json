@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_page_cta_sections",
+  "info": {
+    "displayName": "CTA Section",
+    "icon": "command"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "descriptions": {
+      "type": "component",
+      "component": "page.descriptions",
+      "repeatable": true
+    },
+    "button": {
+      "type": "component",
+      "component": "page.button",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

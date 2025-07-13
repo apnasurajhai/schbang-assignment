@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_page_testimonial_cards",
+  "info": {
+    "displayName": "Testimonial Card",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "descriptions": {
+      "type": "component",
+      "component": "page.descriptions",
+      "repeatable": true
+    },
+    "image": {
+      "type": "component",
+      "component": "page.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

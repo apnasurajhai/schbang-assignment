@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_page_cards",
+  "info": {
+    "displayName": "Card",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "component",
+      "component": "page.image",
+      "repeatable": false
+    },
+    "description": {
+      "type": "component",
+      "component": "page.descriptions",
+      "repeatable": false
+    },
+    "click_url": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
